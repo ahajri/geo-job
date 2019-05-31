@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GeoMapComponent } from './geo-map/geo-map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GeoMapComponent
   ],
   imports: [
     BrowserModule,

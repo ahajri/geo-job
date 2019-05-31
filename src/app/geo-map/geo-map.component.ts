@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {IMapOptions, MarkerTypeId} from 'angular-maps';
 
 @Component({
   selector: 'app-geo-map',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeoMapComponent implements OnInit {
 
-  constructor() { }
+  private markerTypeId = MarkerTypeId;
+
+  private options: IMapOptions = {
+    disableBirdseye: false,
+    disableStreetside: false,
+    navigationBarMode: 1
+  };
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+
+  private _click() {
+    console.log('hello world...');
+  }
 }
